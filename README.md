@@ -72,7 +72,7 @@ This week's assignment mainly focuses on familiarizing with Docker concept.
 [example: `docker run -p 3000:3001 week6_nodejs_app:latest`]
 ![Docker-Building-&-Running-Image](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/Docker-Building-Image.webp)
 
-7. When finished, your image will have successfully created a container
+7. When finished, your container is successfully created!
 ![Docker-Successful-Container](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/Docker-Successful-Container.webp)
 8. Head to the localhost you specified earlier to see the result
 ![Docker-Succesful-Run](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/Docker-Successful-Run.webp)
