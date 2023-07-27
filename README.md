@@ -7,16 +7,16 @@ This week's assignment mainly focuses on familiarizing with Docker concept.
 - Running the project inside the container
 
 ## Docker, Container, Image, and Dockerfile
-Docker
+**Docker**
 :  a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers, enabling developers to create, deploy, and run any application with ease.
 
-Container
+**Container**
 : A standardized unit of packaged software that has everything the software needs to run, including libraries, system tools, code and runtime.
 
-Image
+**Image**
 :  A read-only template/file containing a set of instructions for creating a container
 
-Dockerfile
+**Dockerfile**
 : A simple text file with a set of command or instruction that are executed successively to perform actions on the base image to create a new docker image.
 
 ## Docker and WSL Installation
@@ -42,7 +42,7 @@ Dockerfile
 ## Dockerizing an existing Node.js app 
 <p>To Dockerize a node.js app means to put and run the app inside a <strong>container</strong>, and to do that, we need to build the <strong>image</strong>. But before we can build the image, we need a text file called <strong>Dockerfile</strong></p>
 
-1. The first and foremost step is to always prepare the repository and the necessary files.
+1. The first and foremost step is to always **prepare the repository and the necessary files**.
 - To clone a repository to your local storage: `git clone your-repository-link`
 - To move into the cloned repository: `cd your-cloned-repository-path`
 - To create new folder: `mkdir your-folder-name`
@@ -50,6 +50,7 @@ Dockerfile
 - To open the project in VS Code: `code .`
 
 2. Copy and paste your node.js app into the project folder
+
 3. Create `package.json` file
 [`package.json`: a file that contains descriptive and functional metadata about a project (in this case, an app), such as a name, version, and dependencies.]
 ![package.json-file](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/packagejson.webp)
