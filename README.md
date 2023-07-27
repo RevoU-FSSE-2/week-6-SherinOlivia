@@ -20,24 +20,24 @@ Dockerfile
 : A simple text file with a set of command or instruction that are executed successively to perform actions on the base image to create a new docker image.
 
 ## Docker and WSL Installation
-![Docker-Website]()
+![Docker-Website](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/DockerWebsite.webp)
 1. To Install Docker, first head to [www.docker.com](https://www.docker.com/) and click on `Download`
 2. Wait for the Installer to finish downloading and double-click on the file when finished
-![Docker-Installer-Download]()
+![Docker-Installer-Download](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/DockerDownload.webp)
 3. Wait for Docker to finish Unpacking and Installing
-![Docker-Unpacking]()
-![Docker-Installation]()
+![Docker-Unpacking](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/DockerUnpacking.webp)
+![Docker-Installation](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/DockerInstallation.webp)
 4. Restart your machine to finalize the installation
-![Docker-Install-Finish]()
+![Docker-Install-Finish](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/DockerInstallation2.webp)
 5. To use Docker, we need to install WSL (For Windows User), which can be done in any terminal by using the command: `wsl --update`
-![WSL-Installation]()
+![WSL-Installation](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/WSLInstallation.webp)
 7. Docker is successfully installed
-![Docker-Successful-Installation]()
+![Docker-Successful-Installation](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/DockerSuccesfulInstallation.webp)
 8. A glimpse into Docker Container
-![Docker-Container]()
+![Docker-Container](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/DockerContainer.webp)
 
-##Docker & WSL Installation Verification
-![Docker-&-WSL-Installation-Verification]()
+## Docker & WSL Installation Verification
+![Docker-&-WSL-Installation-Verification](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/WSL%26DockerInstallVerification.webp)
 
 ## Dockerizing an existing Node.js app 
 <p>To Dockerize a node.js app means to put and run the app inside a <strong>container</strong>, and to do that, we need to build the <strong>image</strong>. But before we can build the image, we need a text file called <strong>Dockerfile</strong></p>
@@ -52,7 +52,7 @@ Dockerfile
 2. Copy and paste your node.js app into the project folder
 3. Create `package.json` file
 [`package.json`: a file that contains descriptive and functional metadata about a project (in this case, an app), such as a name, version, and dependencies.]
-![package.json-file]()
+![package.json-file](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/packagejson.webp)
 4. Create `Dockerfile`
 - `FROM` defines from what image we want to build from (aka base image)
 - `WORKDIR` creates a directory to hold the application code inside the image (essentially inside the container)
@@ -61,7 +61,7 @@ Dockerfile
 - `RUN` is an instruction that specifies commands to be run during image building, such commands include installing any application and packages or creating new files and directories needed.
 - `EXPOSE` informs Docker that the container listens on the specified network ports at runtime.
 - `CMD` defines the default executable of a Docker image
-![Dockerfile]()
+![Dockerfile](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/dockerfile.webp)
 5. Build the image through the terminal by using the command: `docker build . -t your_image_name`
 - the `.` in `docker build .` refers to current directory, meaning we are building the docker image using the dockerfile available in the current directory, 
 - while the `-t` means we are naming the image
@@ -69,17 +69,17 @@ Dockerfile
 - `p` refers to port, we are defining the port we will use to access the port the app is running at. i.e `-p 3000:3001`
 - `:latest` refers to the latest version of your image
 [example: `docker run -p 3000:3001 week6_nodejs_app:latest`]
-![Docker-Building-&-Running-Image]()
+![Docker-Building-&-Running-Image](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/Docker-Building-Image.webp)
 
 7. When finished, your image will have successfully created a container
-![Docker-Successful-Container]()
+![Docker-Successful-Container](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/Docker-Successful-Container.webp)
 8. Head to the localhost you specified earlier to see the result
-![Docker-Succesful-Run]()
+![Docker-Succesful-Run](https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/main/assets/Docker-Successful-Run.webp)
 
 ### Contact Me:
 
-<img src="https://github.com/RevoU-FSSE-2/week-5-SherinOlivia/blob/main/assets/MDimgs/icons8-gmail.gif?raw=true" width="15px" background-color="none">[SOChronicle@gmail.com](mailto:SOChronicle@gmail.com) [Personal]
+<img src="https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/d4766e3a095066d02388b3f25b6e211695e556fd/assets/gmail-icon.svg" width="15px" background-color="none">[SOChronicle@gmail.com](mailto:SOChronicle@gmail.com) [Personal]
 
-<img src="https://github.com/RevoU-FSSE-2/week-5-SherinOlivia/blob/main/assets/MDimgs/icons8-gmail.gif?raw=true" width="15px" background-color="none">[SOlivia@gmail.com](mailto:SOlivia198@gmail.com) [Work]
+<img src="https://raw.githubusercontent.com/RevoU-FSSE-2/week-6-SherinOlivia/d4766e3a095066d02388b3f25b6e211695e556fd/assets/gmail-icon.svg" width="15px" background-color="none">[SOlivia@gmail.com](mailto:SOlivia198@gmail.com) [Work]
 
 [![Roo-Discord](https://raw.githubusercontent.com/RevoU-FSSE-2/week-5-SherinOlivia/bddf1eca3ee3ad82db2f228095d01912bf9c3de6/assets/MDimgs/icons8-discord.svg)](https://discord.com/users/shxdxr#7539)[![Roo-Instagram](https://raw.githubusercontent.com/RevoU-FSSE-2/week-5-SherinOlivia/bddf1eca3ee3ad82db2f228095d01912bf9c3de6/assets/MDimgs/icons8-instagram.svg)](https://instagram.com/shxdxr?igshid=MzRlODBiNWFlZA==)[![Roo-LinkedIn](https://raw.githubusercontent.com/RevoU-FSSE-2/week-5-SherinOlivia/bddf1eca3ee3ad82db2f228095d01912bf9c3de6/assets/MDimgs/icons8-linkedin-circled.svg)](https://www.linkedin.com/in/sherin-olivia-07311127a/)
